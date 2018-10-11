@@ -1,0 +1,28 @@
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+a:visited {
+  color: purple;
+}

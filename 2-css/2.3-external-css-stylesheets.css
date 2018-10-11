@@ -1,0 +1,33 @@
+.first-class {
+  color: blue;
+}
+
+.second-class {
+  font-size: 250%;
+}
+
+.first-section {
+  color: blue;
+  background-color: pink;
+  width: 50%;
+  /* width: 100px */
+}
+
+.first-class-span {
+  color: red;
+  text-decoration: overline;
+}
+
+#first-id {
+  color: green;
+}
+
+p {
+  color: red;
+  font-size: 100%;
+  font-family: Arial, Helvetica, Sans-serif;
+}
+
+h1 {
+  color: pink;
+}

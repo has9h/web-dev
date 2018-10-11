@@ -1,0 +1,22 @@
+#first-div-class {
+  background-color: #89bdd3;
+  border: 1px black solid;
+}
+
+#second-div-class {
+  background-color: #9ad3de;
+  border: 1px solid;
+  border-color: black green blue red;
+}
+
+#third-div-class {
+  background-color: #e3e3e3;
+  border-radius: 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  float:  left;
+}

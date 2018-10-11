@@ -1,0 +1,40 @@
+#top-bar {
+  background-color: #e3e3e3;
+  width: 90%;
+  margin: 0 auto;
+  height: 40px;
+}
+
+#bbc-logo {
+  width: 100px;
+  height: 30px;
+  margin: 8px;
+  float: left;
+}
+
+#sign-in-img {
+  width: 24px;
+  height: 24px;
+  margin: 8px 15px;
+  float: left;
+}
+
+#sign-in-text {
+  font-weight: bold;
+  font-size: 90%;
+  position: relative;
+  top: 13px;
+  padding-right: 50px;
+}
+
+.top-bar-section {
+  float: left;
+  height: 100%;
+  border-left: 1px #cccccc solid;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
