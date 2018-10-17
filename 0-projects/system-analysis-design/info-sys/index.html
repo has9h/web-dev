@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Information Systems </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h2> Information Systems Building Blocks </h2>
+
+      <p>
+        <strong> Systems analysis and design methods are used to develop information systems for organizations. Before learning the process of building systems, an understanding is required of tbe product you are trying to build. This page takes an architectural look at information systems and applications. This section will therefore, more closely look at the producte - the Information System itself. </strong>
+
+        <img src="" />
+      </p>
+
+      <h3> Content: </h3>
+      <ul>
+        <li>
+          Front- and back-office IS
+        </li>
+        <li>
+          Different classes of IS applications
+        </li>
+        <li>
+          Role of IS architecture in systems development
+        </li>
+        <li>
+          High-level goals(<a href="#knowledge">Knowledge</a>, <a href="#process"> Process</a>, <a href="#comm"> Communication</a>) that provide system owners and users with a perspective of an IS
+        </li>
+        <li>
+          Technologies that provide system designers and builders with a perspective of an IS
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3> The Product - Information Systems </h3>
+      <p>
+        Organizations are served not by a single IS, but, instead, by a federation of ISs that support various business functions. Most businesses have:
+
+        <ul>
+          <li>
+            <strong> Front-office IS: </strong> Supports business functions that reach out to customers.
+            <ul>
+              <li>
+                Marketing
+              </li>
+              <li>
+                Sales
+              </li>
+              <li>
+                Customer management
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong> Back-office IS: </strong> Supports internal business operations, as well as interact with suppliers.
+            <ul>
+              <li>
+                Human resources
+              </li>
+              <li>
+                Financial management
+              </li>
+              <li>
+                Manufacturing
+              </li>
+              <li>
+                Inventory control
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        The two together feed data to management information systems and decision support systems that support management needs of the business. Companies also have some sort of intranet(internal to the business) to support communications between employees and information systems.
+      </p>
+    </div>
+
+    <div>
+      <h3> A Framework for IS Architechture </h3>
+      <p>
+        A unifying framework into which various stakeholders with different perspectives can organize and view the fundamental building blocks of IS. It provides a foundation for organizing the various components of any IS that you care to develop. <br />
+
+        <strong> System owners and users tend to focus on three common business goals of any IS </strong>, established in response to one or more business driver:
+
+        <ul>
+          <li>
+            The goal to improve business <a href="#knowledge">knowledge</a>: A product of information and data. Through processing, data is refined to produce information which results in knowledge.
+          </li>
+          <li>
+            The goal to improve business <a href="#process">processes</a> and services: Activities (including management) that carry out the mission of the business
+          </li>
+          <li>
+            The goal to improve business <a href="#communication">communications</a>: How the system interfaces with its users and other ISs
+          </li>
+        </ul>
+
+        Since the role of system designers and builders is more technical, their focus tends to be more on the technologies that may be used by the IS in order to achieve the business goal. Their perspectives tend to focus more on:
+
+        <ul>
+          <li>
+            Database technologies that support business accumulation and use of business knowledge
+          </li>
+          <li>
+            Software technologies that automate and support business processes and services
+          </li>
+          <li>
+            Interface technologies that support business communications and collaborations
+          </li>
+        </ul>
+      </p>
+    </div>
+
+    <div>
+      <h3 id="knowledge">Knowledge Building Blocks</h3>
+      <p>
+        Our goal is to capture and store business data and knowledge using <em>database technologies</em>. These are used to organize and store data for all IS.<br />
+
+        <strong> System Owner's View:</strong> Interested not in raw data but in information that adds new business knowledge and information that help managers make intelligent decisions. <br />
+
+        The <strong>primary role</strong> of system owners in a system development project should be to define the scope and vision for the project.  <br />
+
+        <strong> System User's View:</strong> View data as something recorded on forms, stored in file cabinets, recorded in books and binders, organized into spreadsheets, or stored in computer files and databases.<br />
+
+        <em> Data Requirement: </em> A representation of users’ data in terms of entities, attributes, relationships, and rules independent of data technology.<br />
+
+        <strong> System Designer's View:</strong> Concerned with database technology. Consists of Data structures, database schemas, fields, and indexes. <br />
+
+        <strong> System Builder's View:</strong> Consists of front-end back-end development tools & technologies, DBMS or other data technologies.
+      </p>
+    </div>
+
+    <div>
+      <h3 id="process"> Process Building Blocks </h3>
+      <p>
+        Processes deliver the desired functionality of an IS. Processes represent the work in a system. Software technologies will be used to automate selected processes. <br />
+
+        <strong> System Owner's View:</strong> Concerned with high level processes. <br />
+        A <em>buriness function</em> is a group of related processes that support the business. Functions can be decomposed into other subfunctions and eventually into processes that do specific tasks. A business function has no starting or stopping time, unlike a business event. <br />
+
+        Historically, most ISs were function-centered. Which meant the system supported one or more business function. Today, <em>cross-functional ISs</em> support several business functions: Is is a system that supports relevant business processes from several business functions without regard to traditional organizational boundaries such as divisions, departments, centers, and offices. <br />
+
+        System owner's view a system's business processes with respect to the functional scope being supported by the systems and to a vision or expectation for improvements.<br />
+
+        <strong> System User's View:</strong> Users are concerned with the business processes that must be performed in order to provide the appropriate responses to business events. System users specify the business process in terms of <em>process requirements</em> for a new system. These are often documented in terms of activites, data flows, or work flow.<br />
+
+        <em>Process requirements:</em> A user's expectation of the processing requirements for a business process and its IS <br />
+
+        Business process requirements are frequently defined in terms of <em>policies</em>(a set of explicit rules that govern a business process) and <em>procedures</em>(step-by-step set of instructions and logic for accomplishing a business process) <br />
+        Ex: Credit Approval is a policy. It establishes a set of rules for determining whether or not to extend credit to a customer. That credit approval policy is usually applied within the context of a specific Check Credit procedure that established the correct steps for checking credit against the credit policy. <br />
+
+        Process requirements are also frequently specified in terms of <em>work flow:</em> The flow of transactions through business processes to ensure appropriate checks and approvals are implemented.
+
+        <strong>Once again, the challenge in systems development is to idenfity, express, and analyze business process requirements exclusively in business terms that can be understood by system users.</strong> <br />
+
+        <strong> System Designer's View:</strong> Concerned with which processes to automate and how to automate them, constrained by limitations of application development technologies being used. System builders must provide sufficient detail and consistency for communicating the software design to system builders. <br />
+        <em>Software specifications</em> document the technical design of computer programs to be written by system builders.<br />
+
+        <strong> System Builder's View:</strong> Concerned with programming logic that implements automated processes. <br />
+
+        <em>Application programs </em> are a language-based, machine-readable representation of what a software process is suppoesd to do or how a software process is supposed to accomplish its task.
+
+        <em>Prototyping</em> has become the design technique of choice for many system designers and builders. It is a technique for quickly building a functioning but incomplete model of the IS using RAD(rapid application development) tools. They typically evolve into the final version of the system or application.
+      </p>
+    </div>
+
+    <div>
+      <h3 id="communication"> Communications Building Blocks</h3>
+      <p>
+        A common goal of most organizations is to improve business communications and collaboration between employees and other constituents. It utilizes interface technologies to implement the communication interfaces.<br />
+
+        <strong> System Owner's View:</strong> Concerned with the communications scope of an IS, needing to specify the following, in order to define the scope of an IS development project.:
+        <ul>
+          <li>
+            With which business units, employees, customers, and partners must interact with the system?
+          </li>
+          <li>
+            Where are these business units, employees, customers, and partners located?
+          </li>
+          <li>
+            What other information, computer, or information systems will the system have to interface with?
+          </li>
+        </ul>
+
+        <strong> System User's View:</strong> Concerned more in terms of the information system’s inputs and outputs. The inputs and outputs represent how the proposed system would interact with users, employees, business units, customers, and other businesses.<br />
+
+        <strong> System Designer's View:</strong> Concerned with the technical design of both the user and the system-to-system communication interfaces. These are called <em>interface specifications:</em> Technical designs that document how system users are to interact with a system and how a system interacts with other systems. <br />
+
+        Users and designers can be involved in interface design. But whereas system users are interested in requirements and format, system designers have other interests such as consistency, compatibility, completeness, and <em>user dialogues:</em> A specification of how the user moves from window to window or page to page, interacting with the application programs to perform useful work. <br />
+
+        <strong> System Builder's View:</strong> Concerned with the construction, installation, testing and implementation of user and system-to-system interface solutions. For user interfaces, the interface technology is frequently embedded into an <em>application development environment(ADE)</em> used to construct software for the system. <br />
+        <em>Middleware:</em> Utility software that allows application software and systems software that utilize differing technologies to interoperate
+      </p>
+    </div>
+  </body>
+</body>
+</html>

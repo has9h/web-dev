@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> System Analysis & Design </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <h1> SAD Little Project </h1>
+    <h2> To keep track of all the course content </h2>
+
+    <div>
+      <p>
+        A <strong> system </strong> is a group of interrelated components that function together to achieve a desired result. <br />
+        Ex: Home theater system made up of DVD player, receiever, speaker <br />
+        A system turns data into information and includes:
+        <ul>
+          <li>
+            Hardware & system software
+          </li>
+          <li>
+            Documentation & training materials
+          </li>
+          <li>
+            Job roles associated with the system
+          </li>
+          <li>
+            Controls to prevent theft or fraud
+          </li>
+          <li>
+            People who use the software to perform their jobs
+          </li>
+        </ul>
+
+
+      </p>
+
+      <p>
+        A system exists within an environment, and a boundary separates a system from its environment. It has nine characteristics:
+        <ul>
+          <li>
+            Components
+          </li>
+          <li>
+            Interrelated components
+          </li>
+          <li>
+            Boundary
+          </li>
+          <li>
+            Purpose
+          </li>
+          <li>
+            Environment
+          </li>
+          <li>
+            Interfaces
+          </li>
+          <li>
+            Constraints
+          </li>
+          <li>
+            Input
+          </li>
+          <li>
+            Output
+          </li>
+        </ul>
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <strong> <a href="info-sys/index.html" > Information Systems (IS) </a></strong> Arrangement of people, data, processes, and <strong> information technology </strong> that interact to collect, process,store, and provide as output the information needed to support an organization. They capture and manage data to produce useful information that supports an organization and its employees, customers, suppliers, and partners.<br>
+        They may be classified according to the functions that they serve:
+        <ul>
+          <li>
+            Transaction Processing Systems
+          </li>
+          <li>
+            Management Information Systems
+          </li>
+          <li>
+            Decision Support Systems
+          </li>
+          <li>
+            Executive Information Systems
+          </li>
+          <li>
+            Expert Systems
+          </li>
+          <li>
+            Communication & Collaboration Systems
+          </li>
+          <li>
+            Office Automation Systems
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        There are three components of an IS:
+        <ul>
+          <li>
+            Data: Raw facts<br />
+            Information: Derived from data and organized in a manner that humans can understand. <br />
+            Understanding the source and use of data is key to good system design.
+          </li>
+          <li>
+            Data Flows: Groups of data that move and flow through a system. <br />
+            Includes description of sources and destination for each data flow.
+          </li>
+          <li>
+            Processing Logic: Describes steps that transform data and events that trigger the steps.
+          </li>
+
+        </ul>
+      </p>
+    </div>
+
+    <div>
+      <strong>Information Technology (IT)</strong> describes the combination of computer technology (hardware and software) with telecommunications technology (data, image, and voice networks).<br>
+      Information systems can be viewed from various perspectives, including:
+      <ul>
+        <li>
+          <a href="#player-sec">Players</a>: System Stakeholders
+        </li>
+        <li>
+          <a href="#business-sec">Business Drivers</a>: Influencing the IS
+        </li>
+        <li>
+          <a href="#tech-sec">Technology Drivers</a>: Used by the IS
+        </li>
+        <li>
+          <a href="./sys-dev-process/index.html">Process</a>: Used to develop the IS
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 id="player-sec"> The Players: System Stakeholders </h3>
+      <p>
+        Stakeholder: Any person who has an interest in an existing or proposed IS. Stakeholders may include both technical and non-technical workers. They may also include both internal & external workers <br>
+        Stakeholders can be broadly classified into five groups:
+        <ul>
+          <li>
+            System Owners: Usually coming from the ranks of management, they pay for the system to be built and operated and set the vision and priorities for the system. They view an IS in terms of costs(how much will the system cost?) and benefits(how much value or what benefits will the system return to the business?) to solve problems and exploit opportunities. They are an IS' sponsor and executive advocate, responsible for funding the project of developing, operating, and maintaining the IS.
+          </li>
+          <li>
+            System Users: Concerned with the functionality the system provides to their jobs and the system's ease of learning and ease of use. Non-technical, for the most part. There are many classes of system users:
+            <ul>
+              <li>
+                Internal System Users: Employees of the business for which the IS is built.<br />
+                Ex: Clerical, technical, supervisors, managers.
+              </li>
+              <li>
+                External System Users: Customers, suppliers, partners, employees(telecommuting and shit -> remote/mobile users)
+              </li>
+            </ul>
+          </li>
+          <li>
+            System Designers: Technology specialists. Translates a system user's business requirements and constraints into technical solutions. Designs the databases, inputs, outputs, screens, networks, and software that will meet the system user's requirements.
+            <ul>
+              <li>
+                Database administrators - Design and coordinate changes to corporate databases
+              </li>
+              <li>
+                Network architects - Design, install, configure, optimize, support local and wide area networks, including connections to the Internet and other external networks
+              </li>
+              <li>
+                Web architects - Design complex websites for organizations, including public websites for the Internet, internal websites for organizations(Intranets), and private business-to-business websites(Extranets)
+              </li>
+              <li>
+                Graphic artists - Design and construct compelling and easy-to-use interfaces to systems, including interfaces for PCs, the Web, handhelds, and smartphones.
+              </li>
+              <li>
+                Security experts - Ensure data and network security and privacy.
+              </li>
+              <li>
+                Technology specialists - Experts in the application of specific technologies that will be used in a system.
+              </li>
+            </ul>
+          </li>
+          <li>
+            System Builders: Technology specialists. Their role is to construct the IS and components according to the system designer's specifications.
+            <ul>
+              <li>
+                Applications programmers - Convert business requirements and statements of problems and procedures into computer programs. Develop and test programs to capture and store data and locate and retrieve data for computer applications
+              </li>
+              <li>
+                Systems programmers - Develop, test, and implement operating systems level software, utilities, and services. Also develop reusable software components for use by applications programmers.
+              </li>
+              <li>
+                Database programmers - Build, modify, and test database structures and the programs that use and maintain them
+              </li>
+              <li>
+                Network administrators - Design, install, troubleshoot, and optimize computer networks
+              </li>
+              <li>
+                Security administrators - Design, implement, troubleshoot, and manage security and privacy controls in a network.
+              </li>
+              <li>
+                Webmasters - Code and maintain Web servers.
+              </li>
+              <li>
+                Software integrators - Integrate software packages with hardware, networks, and other software pacakages.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./analyst/index.html"> System Analysts</a>: Serves as the facilitator, bridging the communications gap between nontechnical system owners and users, and the techincal system designers and builders. Specialists who studies the problems and needs of an organization to determine how people, data, processes, and information technology can best accomplish needs for the business. <br />
+            The system analysts identify and validate business problems and needs. They ensure that the technical solution fulfills the business needs and integrate the technical solution into the business. <br />
+            <strong> Synonyms: </strong> <em> Systems consultant, business analyst, systems architect, systems engineer, information engineer, information analyst, systems integrator. </em>
+          </li>
+          <li>
+            <strong><a href="proj-mgmt/index.html"> Project Manager</a>: </strong> An experienced professional who accepts responsibility for defining, planning, monitoring, controlling, and closing projects with respect to schedule, budget, deliverables, customer satisfaction, technical standards, and system quality. <br />
+            Most project managers are usually experienced systems analysts. But they may also be selected from the ranks of system owners, to uensure that systems are developed on time, within budget, and with acceptable quality.
+          </li>
+        </ul>
+      </p>
+      <p>
+        All of the above stakeholders are <strong>information workers</strong>. Their job involves creating, collecting, processing, distributing, and using information.
+      </p>
+    </div>
+
+    <div>
+      <h3 id="business-sec"> The Business Drivers </h3>
+      <ul>
+        <li>
+          Globalization of the economy
+        </li>
+        <li>
+          Electronic commerce & business
+        </li>
+        <li>
+          Security & privacy
+        </li>
+        <li>
+          Collaboration & partnership
+        </li>
+        <li>
+          Knowledge asset management
+        </li>
+        <li>
+          Continuous improvement
+        </li>
+        <li>
+          Total quality management
+        </li>
+        <li>
+          Business process redesign
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 id="tech-sec"> The Technology Drivers </h3>
+      <ul>
+        <li>
+          Networks & the Internet: xHTML and XML are the fundamental languages of webpage authoring & Internet application development. <br />
+          Scripting languages are simple programming languages designed specifically for Internet applications.<br />
+          Intranets are essentially private Internets. <br />
+          Extranets are for use between specific organizations.<br />
+          Portals are "home pages" that can be customized to the specific needs of different individuals who use them. For example, portal technology can define Web pages that provide appropriate information and applications for different roles in the same company. Each individual's role determines which information and applications that person can use from his/her Web page. They can also integrate the public Internet, private Intranet, and Extranet content into each individual user's home page.<br />
+          Web services are reusable, web-based programs that can be called from any other Internet program.
+        </li>
+
+        <li>
+          Mobile & wireless technologies
+        </li>
+
+        <li>
+          Object technologies: A software technology that defines a system in terms of objects that consolidate data and behavior(into objects). Objects become reusable and extensible components for the software developers.<br />
+          <ul>
+            <li>
+              Object-Oriented analysis and design:Collection of tools and techniques for systems development that will utilize object technologies to construct a system and its software.<br />
+              <em> As opposite to <a href="sys-dev-process/index.html"> Structured analysis and design</a> </em>
+            </li>
+          </ul>
+          <p>
+            <em> Agile development: </em> A systems development strategy wherein the system developers are given the flexibility to select from a variety of appropriate tools and techniques to best accomplish the task at hand.
+          </p>
+        </li>
+
+        <li>
+          Collaborative technologies:
+          <ul>
+            <li>
+              E-mail
+            </li>
+            <li>
+              Instant Messaging
+            </li>
+            <li>
+              Groupware
+            </li>
+            <li>
+              Work Flow
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Enterprise applications: A large, complex, scalable, distributed, component-based, mission-critial business application. <br />
+
+          <em> 'Internal' Core applications for most businesses: </em>
+          <ul>
+            <li>
+              Financial management
+            </li>
+            <li>
+              Human resource management
+            </li>
+            <li>
+              Marketing and sales
+            </li>
+            <li>
+              Operations management (inventory and/or manufacturing control)
+            </li>
+          </ul>
+
+          <p>
+            These applications may be supplemented with other enterprise applications that integrate an organization's business processes with those of its suppliers and customers, such as:
+          </p>
+
+          <ul>
+            <li>
+              Customer relationship management
+            </li>
+            <li>
+              Supply chain management
+            </li>
+          </ul>
+
+          <p>
+            Any custom application must properly integrate with and interface to a purchased enterprise application.<br />
+            <strong> Systems Integration </strong> is the process of building a unified IS out of diverse components of purchased software, custom-built software, hardware, and networking. <br />
+            Some of the more common enterprise applications are:
+          </p>
+
+          <ul>
+            <li>
+              <strong> Enterprise Resource Planning: </strong>
+              A software application that fully integrates IS that span most or all of the basic, core business functions(including transaction processing and management information for those business functions).<br />
+              An ERP solution is built around a common database shared by common business functions. <br />
+              Most organizations must still supplement the ERP solution with custom software applications to fulfill business requirements that are unique to the industry or business. <br />
+              Systems analysts may be involved in the decision to select and purchase an ERP solution. They are frequently involved ln the customization of the ERP solution, as well as the redesign of business processes to use the ERP solution.
+              <img src="" />
+            </li>
+
+            <li>
+              <strong> Supply Chain Management: </strong> A software application that optimizes business processes for raw material procurement through finished product distribution by directly integrating the logistical IS of organizations with those of their suppliers and distributors.
+            </li>
+
+            <li>
+              <strong> Customer Relationship Management: </strong> A software application that provides customers with access to a business' processes from initial inquiry through postsale service and support.
+            </li>
+
+            <li>
+              <strong> Enterprise Application Integration: </strong> The process and technologies used to link applications to support the flow of data and information between those applications. Usually based on <strong> middleware </strong><br />
+              A <em> middleware </em> is a software used to translate and route data between different applications.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <p>
+        Hasnain Hossain
+      </p>
+    </footer>
+  </body>
+</html>
