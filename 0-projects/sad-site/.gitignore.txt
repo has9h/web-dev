@@ -1,6 +1,0 @@
-#ignore all files ending in .o or .a
-.[oa]
-#ignore all files ending in ~, marking temporary files
-~
-#ignore all files in any directory named 'build'
-build
