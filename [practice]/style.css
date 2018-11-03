@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+div div{
+  width: 100px;
+  height: 100px;
+  border: 2px solid grey;
+}
+
+.static{
+  width: 130px;
+  height: 130px;
+  border: 2px solid grey;
+  position: static;
+  overflow: auto;
+  margin: 10px 10px;
+  float: left;
+  resize: vertical;
+}
+
+.fixed{
+  width: 130px;
+  height: 130px;
+  border: 2px solid grey;
+  position: fixed;
+  overflow: auto;
+  margin: 10px 10px;
+  float: left;
+  resize: vertical;
+}
+
+.relative{
+  width: 130px;
+  height: 130px;
+  border: 2px solid grey;
+  position: relative;
+  top: 100px;
+  overflow: visible;
+  margin: 10px 10px;
+  float: left;
+  resize: both;
+}
+
+.absolute{
+  width: 130px;
+  height: 130px;
+  border: 2px solid grey;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  margin: 10px 10px;
+  float: left;
+  resize: vertical;
+}

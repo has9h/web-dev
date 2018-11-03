@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Practice </title>
+    <<link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+    <div>
+      <h1> CSS Positioning </h1>
+      <p>
+        CSS positioning determines the way elements get drawn and positioned within a webpage. <br />
+        Positioning is determined by the value of a property common to all HTML elements: position <br />
+        It can takes 4 values:
+
+        <ul>
+          <li class="static">
+            static: Not positioned in any particular way. they are laid down where they occur within the flow of the page. <br />
+            They are unaffected by the css properties: top, left, bottom, right
+          </li>
+          <li class="relative">
+            relative: elements can be positioned relatively to the space reserved for them in the flow, using the css properties: top, left, bottom, right. <br />
+            When doing so, the space allocated for them in the page won’t be affected (leaving gaps when moving the element around). The element might overlap with other content around it
+          </li>
+          <li class="absolute">
+            absolute: elements are taken OUT of the flow(no space allocated for it on its parent). <br />
+            element is initially positioned where it would’ve been inserted if statically positioned. <br />
+            If left, top, right, bottom properties are used, the elementis positioned relative to its closest “positioned” (not static) ancestor. If no such ancestor exists, the element is positioned relative to the body of the page. <br />
+            The element is taken out of the flow and its space occupied from the element positioned AFTER it in the document flow. <br />
+            Without an ancestor with relative or absolute positioning, the element is relative to the body of the entire page (so, top:0 means it will be moved to the top of the entire page) <br />
+            With a positioned ancestor (relative in this case), the element is then moved “relatively” to the position of its ancestor
+          </li>
+          <li class="fixed">
+            fixed: taken OUT of the flow(no space allocated for it on its parent). <br />
+            The element is then positioned relatively to the viewport and its position doesn’t change even when scrolling the page, resulting in the element overlapping with the content of the page <br />
+            With or without a positioned ancestor, the element is always relative to entire viewport(so, top:0 means it will be moved to the top of the entire page)
+          </li>
+        </ul>
+      </p>
+    </div>
+
+  </body>
+</html>
