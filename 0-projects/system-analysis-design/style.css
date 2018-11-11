@@ -1,4 +1,13 @@
-body{
-  font-family: Inconsolata, Monaco, Calibri, sans-serif;
+*{
   background-color: #EFEAE3;
+  font-family: Inconsolata, Monaco, Calibri, sans-serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer{
+  text-align: center;
 }
