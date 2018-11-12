@@ -9,20 +9,52 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Inject CSS internal stylesheet AFTER the bootstrap -->
   </head>
 
   <body>
     <!-- The Nav Bar -->
     <!-- Bootstrap JS needed for this: -->
-    <nav class="navbar navbar-default">
+    <!-- A standard navbar has: -->
+    <!-- The nav element, navbar class, the navbar header, navbar-brand for the logo or image -->
+    <!-- A list group for the navbar elements with the .navbar-nav class -->
+    <!-- LOADS of stuff can be added to a navbar; read more: -->
+    <!-- https://getbootstrap.com/docs/3.3/components/#navbar -->
+    <!-- https://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+
+    <!-- Standard navbar: -->
+    <!-- Use .navbar-inverse to toggle a black navbar, instead of the standard .navbar-default -->
+    <!-- Navbar has a default margin; use CSS to remove it -->
+    <!-- Navbar also has rounded corners, which doesn't look good; again, use CSS -->
+    <nav class="navbar navbar-inverse" style="margin-bottom: 0; border-radius: 0">
+      <!-- Thought containers couldn't be nested, but okay :S -->
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed"
+          <a type="link" class="navbar-brand" href="#">Site Name/Logo</a>
         </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
       </div>
     </nav>
+
+    <!-- Jumbotron -->
+    <!-- The ORDER of .jumbotron and .container MATTERS; try switching! -->
+    <!-- Try .text-center -->
+    <div class="jumbotron">
+      <div class="container">
+        <h2> Bootstrap Cheatsheet </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <!-- .center-block to center the button -->
+        <button type="button" class="btn btn-primary center-block" href="#">Read More</button>
+      </div>
+    </div>
 
     <!-- Typography -->
     <div class="container">
