@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Homepage </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    
+    <body class= "myPage">
+        <div class="container" class="page-intro">
+            <!--First half of the homepage section that has the image, and a little intro panel-->
+            
+            <!--IUB Logo goes here-->
+            <p class= "first">
+            <a href= "http://www.iub.edu.bd/"> <img src="http://www.fhrc-bd.org/images/logo/logo_iub.png" width="200" height="200"></img> </a> 
+            <span> Independent University Bangladesh </span>
+            </p>
+            
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p class="second"> 
+                        Founded in 1993, Independent University, Bangladesh is one of the oldest private universities in Bangladesh where academic excellence is a tradition, teaching a passion and lifelong learning a habit. IUB currently has more than 7,048 undergraduate and graduate students and over 10,455 alumni. The student population is projected to grow at 10% annually. The students of IUB experience an exciting academic life with copious opportunity to explore and nurture their innate talent.
+                    </p>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; align:center; background-color: #581845">Login</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class= "container" class="page-body">
+            <!--Second part which handles the styling of the account creation section-->
+            
+            <!--Model to show a pop-up message box for the login form-->
+            <div id="id01" class="modal">
+                
+                <!--action? And what does animate do?-->
+                <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                  <label for="group"><b>Group</b></label>
+                  <select>
+                      <option label="Student">Student</option>
+                      <option label="Faculty">Faculty</option>
+                      <option label="Admin">Admin</option>
+                    </select>
+                    
+                  <button type="submit" style="background-color: #581845">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="/pages/recovery/index.html">password?</a></span>
+                </div>
+              </form>
+            </div>
+            
+            <br><br><br>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>
+                        New to IUB?
+                    <br>
+                        Create your IUB student account, which will serve as your digital assitant to keep track of course information, events, and activites.
+                    </p>
+                    
+                    <a href="pages/signup-page/index.html"> <button style="background-color: #581845"> Create Account </button></a>
+                
+                    <!--Little section at the bottom which handles password retrieval-->
+                    <p>
+                        Have issues that need help?
+                    </p>
+                    
+                    <p>
+                        Forgot your password? <br><span> That's OK, we are here to help! <br>To recover your password, visit the Forgot Password page. </span>
+                        <br><br>
+                        IUB account holders: <br><span> If you need assistance with account management, please visit the Penn State Help Request Portal. </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="text-center">
+          <a class="up-arrow" href="#myPage">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a><br><br>
+          <p>Contact:</p>
+        </footer>
+        
+      
+        <script src= "jquery-3.3.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+    
+</html>

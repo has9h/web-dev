@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- set 'user-scalable=no' in the meta tag to disable zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        <title> Learning Bootstrap </title>
+    </head>
+    
+    <body>
+        <!--The Bootstrap grid system has four classes:-->
+        <!--    xs (for phones - screens less than 768px wide)-->
+        <!--    sm (for tablets - screens equal to or greater than 768px wide)-->
+        <!--    md (for small laptops - screens equal to or greater than 992px wide)-->
+        <!--    lg (for laptops and desktops - screens equal to or greater than 1200px wide)-->
+        
+        <!--Containers are not nestable in Bootstrap-->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                <!--  <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>-->
+                <!--  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+                
+                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                  <!--<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+                  <!--<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+                  <!--<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>-->
+                
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+                  <!--<div class="col-xs-6">.col-xs-6</div>-->
+                  <!--<div class="col-xs-6">.col-xs-6</div>-->
+                  
+                  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+                  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                  
+                  <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+                  <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+                  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                  <!--<div class="clearfix visible-xs-block"></div>-->
+                  <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -5,4 +5,5 @@
 #ignore all files in any directory named 'build'
 build/
 #ignore the bootstrap libraries directory
+#automatically considers and ignores any bootstrap directories that may be inside /child directories, not just /
 bootstrap-3.3.7-dist/
