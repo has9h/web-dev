@@ -4,3 +4,5 @@
 *~
 #ignore all files in any directory named 'build'
 build/
+#ignore the bootstrap libraries directory
+bootstrap-3.3.7-dist/
