@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onclick="showDate()" id="body">
+        <div class="header">
+            <h1 id="header1">Learning Javascript</h1>
+            <p>Yay</p>
+        </div>
+
+        <div class="container">
+          <button type="button" onclick="doClick()">Click Me</button>
+          <button type="button" onclick="this.innerHTML = 'You clicked!'">Click Me!</button>
+          <button type="button" onclick="changeText(this)">Click Moi</button>
+
+          <button type="button" onmouseover="showDate()" onmouseout="clearDate()" onclick="showDate()">Show Date</button>
+          <h1 id="time"></h1>
+
+          <form method="post" name="form" onsubmit="return validateForm()">
+              <div>
+                <label>First Name </label>
+                <input type="text" name="firstName" id="firstName" placeholder="Add Name">
+              </div>
+              <br />
+              <div>
+                <label>Last Name </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Add Last Name">
+              </div>
+              <br />
+              <div>
+                  <label>Background</label>
+                  <select id="background" name="background" onchange="changeBackground(this)">
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="green">Green</option>
+                  </select>
+              </div>
+              <br />
+              <input type="submit" name="submit" value="Submit">
+          </form>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

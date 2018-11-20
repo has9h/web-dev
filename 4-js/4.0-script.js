@@ -72,3 +72,74 @@ function Fruit(name, color, shape){
 var apple = new Fruit('apple', 'green', 'round');
 console.log(apple);
 console.log(apple.describe());
+
+// Arrays of objects
+
+var users = [
+  {
+    name: 'John Doe',
+    age: 30
+  },
+  {
+    name: 'Zucc',
+    age: 42
+  },
+  {
+    name: 'Shelly',
+    age: 30
+  }
+];
+
+console.log(users);
+console.log(users[0].name);
+
+// Events
+
+function doClick(){
+  alert('You Clicked');
+}
+
+function changeText(id){
+  console.log("ID:" + id);
+  id.innerHTML = "You clicked";
+}
+
+function changeText(){
+  var header = document.getElementById('header1');
+  header.innerHTML = "Text Changed";
+}
+
+function showDate(){
+  document.getElementById('time');
+  time.innerHTML = Date();
+}
+
+function clearDate(){
+  document.getElementById('time');
+  time.innerHTML = '';
+}
+
+function changeBackground(id){
+  // console.log(changeBackground);
+  // console.log("Hello");
+  // console.log(id);
+  console.log(id.value);
+  var body = document.getElementById('body');
+  body.style.backgroundColor = id.value;
+  header1.style.color = id.value;
+}
+
+function validateForm(){
+  var firstName = document.forms["myForm"]["firstName"].value;
+  // Can also use document.getElementById('id')
+
+  if(firstName == null || firstName == ''){
+    alert('First name required');
+    return false;
+  }
+
+  if(firstName.length < 3){
+    alert('First name must be more than 3 characters');
+    return false;
+  }
+}
