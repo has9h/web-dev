@@ -39,7 +39,7 @@ var person = {
     fullName: function(){
         return this.firstName + " " + this.lastName;
     }
-}
+};
 
 console.log(person.children[0]);
 console.log(person.address);
@@ -52,7 +52,7 @@ apple.color = 'red';
 apple.shape = 'round';
 apple.describe = function(){
     return this.shape + "ed " + this.color;
-}
+};
 
 console.log(apple);
 console.log(apple.describe());
@@ -66,7 +66,7 @@ function Fruit(name, color, shape){
     this.shape = shape;
     this.describe = function(){
         return this.name + ' is the color ' + this.color;
-    }
+    };
 }
 
 var apple = new Fruit('apple', 'green', 'round');
@@ -123,10 +123,12 @@ function changeBackground(id){
   // console.log(changeBackground);
   // console.log("Hello");
   // console.log(id);
-  console.log(id.value);
+  console.log("Background ID: " + id.value);
   var body = document.getElementById('body');
+  var p = document.getElementById('para');
   body.style.backgroundColor = id.value;
   header1.style.color = id.value;
+  p.style.color = id.value;
 }
 
 function validateForm(){
