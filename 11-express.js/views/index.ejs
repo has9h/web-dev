@@ -1,5 +1,28 @@
 <% include partials/header %>
     <h1> HELLO FROM EJS </h1>
+    <h2> Add Customer </h2>
 
+    <form method="post" action="/users/add">
+      <label>First Name</label> <br />
+      <input type="text" name="firstName" />
+      <br />
+      <label>ID</label> <br />
+      <input type="text" name="id" />
+      <br />
+      <label>Email</label> <br />
+      <input type="text" name="email" />
+      <br /> <br />
+      <input type="submit" value="submit" />
+    </form>
+
+    <hr />
+    <!-- To output values, use the equals sign -->
     <h2> <%= title %> </h2>
+    <ul>
+      <% users.forEach(function(user){ %>
+        <li>
+            <%= user.name %>
+        </li>
+      <% }) %>
+    </ul>
 <% include partials/footer %>

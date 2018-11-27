@@ -18,7 +18,6 @@
 
 You don't have to repeat same code over and over again. Node.js is a low-level I/O mechanism which has an HTTP module. If you just use an HTTP module, a lot of work like parsing the payload, cookies, storing sessions (in memory or in Redis), selecting the right route pattern based on regular expressions will have to be re-implemented. With Express.js it there for you to use.
 
-
 ## Stuff in Express.js
 
 * Setup - Creating package.json file and including dependencies
@@ -31,9 +30,15 @@ You don't have to repeat same code over and over again. Node.js is a low-level I
 
 Express.js basically helps you manage everything, from routes, to handling requests and views.
 
-**Other Info:**
+### Packages & Modules Used:
 
-Use and install `nodemon` to avoid manually restarting servers to view changes
+* `http`
+* `express`
+* `nodemon`: Use and install `nodemon` to avoid manually restarting servers to view changes
+* `body-parser`
+* `path`
+* `ejs`
+* `express-validator`
 
 ### On Routing:
 
