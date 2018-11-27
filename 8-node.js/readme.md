@@ -1,5 +1,9 @@
 # Node.js
 
+[An Introduction to Node.js, the Server Side JavaScript](https://opensourceforu.com/2016/01/an-introduction-to-node-js-the-server-side-javascript/)
+
+[Node Frameworks](http://nodeframework.com/)
+
 * JS runtime environment built on Chrome's V8 JS engine -> Which is written in C++
 * JS running on the server
 * Used for Scalable web applications
