@@ -1,0 +1,15 @@
+{
+  "name": "customer-app",
+  "version": "1.0.0",
+  "description": "* Minimalistic, open source web framework for Node.js\r * Used to build web applications and applications\r * Uses MVC concepts\r   * Controllers are used to direct traffic and load views\r   * Models are used for data storage and databases\r   * Views for displaying user interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasnain Hossain",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

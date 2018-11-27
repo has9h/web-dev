@@ -7,3 +7,5 @@ build/
 #ignore the bootstrap libraries directory
 #automatically considers and ignores any bootstrap directories that may be inside /child directories, not just /
 bootstrap-3.3.7-dist/
+#ignore the jQuery library
+jquery-3.3.1.min.js
