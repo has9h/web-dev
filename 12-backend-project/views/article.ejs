@@ -1,0 +1,12 @@
+<% include partials/header %>
+  <div class="container">
+    <h1> <%= article.title %> </h1>
+    <h5> Writen by <%= article.author %> </h5>
+    <p>
+      <%= article.body %>
+    </p>
+    <hr />
+    <a class="btn btn-default" href="/articles/edit/<%=article._id%>">Edit</a>
+    <a class="btn btn-danger delete-article" data-id=<%=article._id%> href='#'>Delete</a>
+  </div>
+<% include partials/footer %>
